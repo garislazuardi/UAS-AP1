@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A[10]= {65,43,22,12,76,87,35,97,36,39};
+    int bil;
+
+        for(int i=0;i<10;i++)
+    {
+        cout<<"A["<<i<<"]: "
+        <<A[i]<<endl;
+    }
+    cout<<endl;
+    cout<<"Masukan Nilai: ";
+    cin>>bil;
+
+    for(int j=0;j<10;j++)
+    {
+        if(A[j]==bil)
+        {
+            cout<<"Nilai Yang Di Cari diIndeks ke-"<<j;
+            break;
+        }
+    }
+    return 0;
+}
